@@ -14,3 +14,6 @@ Steps
 1.) Clone the repo " git clone <url> "
 2.) Run " npm install " in the Manager folder (Note how node_modules folder is added)
 3.) " expo start " to begin testing
+
+MAC OS Requirements 
+- 
