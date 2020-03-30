@@ -5,13 +5,12 @@ Prerequisite Installations
 2.) Node JS https://nodejs.org/en/download/
 3.) Github https://gitforwindows.org/
 4.) Expo (Follow instructions below)
-5.) Yarn https://classic.yarnpkg.com/en/docs/install/#windows-stable
 
 Installing and Initializing Expo
 1.) " npm install expo-cli --global "
-2.) Outside of the Manager folder " expo init Manager "
+2.) [optional] you might run into issue about script execution policy, run " Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser " to let yourself run scripts
 
 Steps
 1.) Clone the repo
-2.) Run " yarn install " in the Manager folder
+2.) Run " npm install " in the Manager folder (Note how node_modules folder is added)
 3.) " expo start " to begin testing
