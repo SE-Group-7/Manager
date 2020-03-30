@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, TextInput, Button, Table } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+const Stack = createStackNavigator();
 
 function HomeScreen({ navigation }) {
   return (
@@ -27,37 +28,121 @@ function HomeScreen({ navigation }) {
   );
 }
 
-function TablesScreen() {
+function TablesScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={styles.title}> This is the tables screen</Text>
-      <Text style={styles.table}> Table 1</Text>
+      <Text style={styles.title}> View Table Status</Text>
+
+      <Button 
+        title="Table1"
+        onPress={() => navigation.navigate('Table1')}
+      ></Button>
       <Text style={styles.table}> Table 2</Text>
       <Text style={styles.table}> Table 3</Text>
+      <Text style={styles.table}> Table 4</Text>
     </View>
   )
 }
+
+function Table1Screen() {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={styles.title}> Table Status</Text>
+      <Text>Reserved</Text>
+      <Text>Seats 4</Text>
+      <Text>Server: </Text>
+      <Button
+        title="View Bill"
+        onPress={() => viewBill()}
+      ></Button>
+    </View>
+
+  )
+}
+
+/* Trying to create individual screens for each table with multiple options
+function tables() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Tables Overviews" component={Tables} />
+        <Stack.Screen name="Table1" component={Table1} />
+        <Stack.Screen name="Table2" component={Table2} />
+        <Stack.Screen name="Table3" component={Table3} />
+        <Stack.Screen name="Table4" component={Table4} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+*/ 
 
 function MenuScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={styles.title}> This is the Menu screen</Text>
-      <Text style={styles.menuItem}>Menu Item 1</Text>
-      <Text>Menu Item 1 Description</Text>
-      <Text style={styles.menuItem}>Menu Item 2</Text>
-      <Text>Menu Item 2 Description</Text>
-      <Text style={styles.menuItem}>Menu Item 3</Text>
-      <Text>Menu Item 3 Description</Text>
-      <Text style={styles.menuItem}>Menu Item 4</Text>
-      <Text>Menu Item 4 Description</Text>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'baseline' }}>
+      <Text style={styles.title}>Breakfast</Text>
+      <Text style={styles.menuItem}>Breakfast Burrito</Text>
+      <Text>Scrambled Eggs, Ham, Swiss Cheese</Text>
+      <Text style={styles.menuItem}>Sausage Egg&Cheese</Text>
+      <Text>Turkey Sausage, Over easy eggs, and American Cheese</Text>
+      <Text style={styles.title}>Lunch</Text>
+      <Text style={styles.menuItem}>Shrimp Tacos</Text>
+      <Text>4 Soft shell tacos with your toppings</Text>
+      <Text style={styles.menuItem}>Beef Bowl</Text>
+      <Text>White rice, sour cream, salsa, queso, with steak</Text>
+      <Text style={styles.title}>Dinner</Text>
+      <Text style={styles.menuItem}>Fettucini</Text>
+      <Text>Pasta in vodka sauce with parmesan</Text>
+      <Text style={styles.menuItem}>Rigottoni</Text>
+      <Text>Clam chowder</Text>
+      <Button
+        title="EDIT MENU"
+        ></Button>
     </View>
   )
 }
 
+
+
 function TimesheetScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={styles.title}> This is the Timesheet screen</Text>
+    <View style={{ flex: 1, alignItems: 'flex-start', justifyContent: 'baseline' }}>
+      <Text style={styles.title}>Employee Check-In</Text>
+      <Text style={styles.title}>Today's Check-Ins 6</Text>
+      <Text style={styles.menuItem}>James Blake</Text>
+      <Text>Bus</Text>
+      <Text>Clock in: 8:30AM</Text>
+      <Text>Clock out: 4:30PM</Text>
+      <Text>Tables 4,9</Text>
+      <Text style={styles.menuItem}>George Harrison</Text>
+      <Text>Kitchen</Text>
+      <Text>Clock in: 10:30AM</Text>
+      <Text>Clock out: NULL</Text>
+      <Text>Tables NULL</Text>
+      <Text style={styles.menuItem}>Ringo Starr</Text>
+      <Text>Bus</Text>
+      <Text>Clock in: 10:00AM</Text>
+      <Text>Clock out: 6:00PM</Text>
+      <Text>Tables 2, 5, 6</Text>
+      <Text style={styles.menuItem}>John Lennon</Text>
+      <Text>Bus</Text>
+      <Text>Clock in: 11:00AM</Text>
+      <Text>Clock out: NULL</Text>
+      <Text>Tables NULL</Text>
+      <Text style={styles.menuItem}>Eric Clapton</Text>
+      <Text>Kitchen</Text>
+      <Text>Clock in: 11:00AM</Text>
+      <Text>Clock out: 5:00PM</Text>
+      <Text>Tables NULL</Text>
+      <Text style={styles.menuItem}>Paul No</Text>
+      <Text>Bus</Text>
+      <Text>Clock in: 11:00AM</Text>
+      <Text>Clock out: 5:00PM</Text>
+      <Text>Tables 1, 3, 8</Text>
+      <Text style={styles.menuItem}>Chris Paul</Text>
+      <Text>Bus</Text>
+      <Text>Clock in: 7:00AM</Text>
+      <Text>Clock out: NULL</Text>
+      <Text>Tables 10</Text>
     </View>
 
   )
@@ -70,7 +155,7 @@ function AnalyticsScreen() {
     </View>
   )
 }
-const Stack = createStackNavigator();
+
 
 function App() {
   return (
