@@ -1,0 +1,47 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @react-navigation/stack
+
+PATH: 
+  C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\AOMEI Backupper;C:\Program Files\MATLAB\R2019b\bin;C:\Program Files\MATLAB\R2019a\bin;C:\Program Files\Git\cmd;C:\MinGW\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\Tyler Hong\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Tyler Hong\AppData\Local\Programs\Python\Python37-32\;C:\Users\Tyler Hong\AppData\Local\Microsoft\WindowsApps;C:\Users\Tyler Hong\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Tyler Hong\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Tyler Hong\AppData\Roaming\npm;C:\Users\Tyler Hong\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Tyler Hong\Documents\Github\Manager\node_modules\file-uri-to-path\test'
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "web": "expo start --web",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "expo": "~36.0.0",
+      "react": "~16.9.0",
+      "react-dom": "~16.9.0",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+      "react-native-web": "~0.11.7"
+    },
+    "devDependencies": {
+      "babel-preset-expo": "~8.0.0",
+      "@babel/core": "^7.0.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
