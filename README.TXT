@@ -16,4 +16,6 @@ Steps
 3.) " expo start " to begin testing
 
 MAC OS Requirements 
-- 
+1.) Install Watchmen for expo cli to work
+    'brew install Watchmen'
+2.) Run 'npm install'
