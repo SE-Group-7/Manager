@@ -11,6 +11,6 @@ Installing and Initializing Expo
 2.) [optional] you might run into issue about script execution policy, run " Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser " to let yourself run scripts
 
 Steps
-1.) Clone the repo
+1.) Clone the repo " git clone <url> "
 2.) Run " npm install " in the Manager folder (Note how node_modules folder is added)
 3.) " expo start " to begin testing
