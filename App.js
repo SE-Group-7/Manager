@@ -107,7 +107,7 @@ function TimesheetScreen() {
   return (
     <View style={{ flex: 1, alignItems: 'flex-start', justifyContent: 'baseline' }}>
       <Text style={styles.title}>Employee Check-In</Text>
-      <Text style={styles.title}>Today's Check-Ins 6</Text>
+      <Text style={styles.title}>Today's Check-Ins 7</Text>
       <Text style={styles.menuItem}>James Blake</Text>
       <Text>Bus</Text>
       <Text>Clock in: 8:30AM</Text>
@@ -150,8 +150,30 @@ function TimesheetScreen() {
 
 function AnalyticsScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text style={styles.title}> This is the Analytics screen</Text>
+    <View style={{ flex: 1, alignItems: 'baseline', justifyContent: 'baseline' }}>
+      <Text style={styles.title}> Choose data to view:</Text>
+      <Text style={styles.menuItem}>Employee</Text>
+      <Button
+        title="Employee Ratings"
+        ></Button>
+      <Button
+        title="Employee Feedbacks"
+        ></Button>
+      <Text style={styles.menuItem}>Accounting</Text>
+      <Button
+        title="Efficiency Score"
+        ></Button>
+      <Button
+        title="Net Profit"
+        ></Button>
+      <Text style={styles.menuItem}>Misc</Text>
+      <Button
+        title="Most Popluar Menu Item"
+        ></Button>
+      <Button
+        title="Traffic Predicitions"
+        ></Button>
+      
     </View>
   )
 }
